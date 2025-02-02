@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+node_modules/
+vendor/
+*.log
+tmp/
+.env
+*.out
+*.exe
+*.o
+.vscode/
+.idea/
