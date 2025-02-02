@@ -46,7 +46,6 @@ window.setWindowIcon(QIcon('oupi goupi.ico'))
 
 layout = QVBoxLayout()
 
-# Champ de longueur du mot de passe
 length_layout = QHBoxLayout()
 length_label = QLabel("Longueur :")
 length_label.setStyleSheet("font-size: 22px; color: white;")
@@ -65,7 +64,6 @@ length_layout.addWidget(length_label)
 length_layout.addWidget(length_entry)
 layout.addLayout(length_layout)
 
-# Cases à cocher
 checkbox_layout = QVBoxLayout()
 uppercase_checkbox = QCheckBox("Majuscules")
 uppercase_checkbox.setStyleSheet("font-size: 20px; color: white;")
@@ -79,7 +77,6 @@ checkbox_layout.addWidget(digits_checkbox)
 checkbox_layout.addWidget(special_checkbox)
 layout.addLayout(checkbox_layout)
 
-# Bouton de génération
 generate_button = QPushButton("Générer")
 generate_button.setStyleSheet("""
     background-color: #4CAF50;
@@ -92,7 +89,6 @@ generate_button.setStyleSheet("""
 generate_button.clicked.connect(generate_password)
 layout.addWidget(generate_button)
 
-# Champ pour le mot de passe généré
 password_entry = QLineEdit()
 password_entry.setReadOnly(True)
 password_entry.setStyleSheet("""
@@ -105,7 +101,6 @@ password_entry.setStyleSheet("""
 """)
 layout.addWidget(password_entry)
 
-# Bouton de copie
 copy_button = QPushButton("Copier")
 copy_button.setStyleSheet("""
     background-color: #2196F3;
@@ -118,10 +113,8 @@ copy_button.setStyleSheet("""
 copy_button.clicked.connect(copy_to_clipboard)
 layout.addWidget(copy_button)
 
-# Fenêtre sans barre de titre
 window.setLayout(layout)
 
-# Taille de la fenêtre
 window.setGeometry(100, 100, 800, 600)
 
 window.show()
