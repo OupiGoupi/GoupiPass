@@ -1,6 +1,6 @@
 # GoupiPass
 
-GoupiPass est un gestionnaire de mots de passe simple et sécurisé.
+GoupiPass est un générateur de mots de passe simple et sécurisé.
 
 ## 🚀 Installation
 1. Clonez le dépôt :
